@@ -52,17 +52,17 @@ extension CircularRevealAnimator : UIViewControllerAnimatedTransitioning {
             transitionContext.completeTransition(true)
         }
         
-        let substitutePathForMask = { (path: CGPath) -> CALayer in
-            let mask = CAShapeLayer()
-            mask.path = path
-            
-            return mask
-        }
-        
         if spreading {
             containerView.insertSubview(target, aboveSubview: source)
             let animation = CABasicAnimation(keyPath: "path", fromValue: startPath, toValue: endPath, duration: duration, timingFunction: timingFunction, delegate: delegate)
-            target.layer.mask = substitutePathForMask(endPath)
+            
+            target.layer.mask = { () -> CALayer in
+                let mask = CAShapeLayer()
+                mask.path = endPath
+                
+                return mask
+            }()
+            
             target.layer.mask.addAnimation(animation, forKey: "circular")
         } else {
             containerView.insertSubview(target, belowSubview: source)
