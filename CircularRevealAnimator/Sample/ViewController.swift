@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(sender: UIButton) {
         tapPoint = sender.center
-        performSegueWithIdentifier("toSecondView", sender: sender)
+        performSegueWithIdentifier("toSecondView", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
