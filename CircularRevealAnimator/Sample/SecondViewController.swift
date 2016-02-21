@@ -2,39 +2,30 @@
 //  SecondViewController.swift
 //  CircularRevealAnimator
 //
-//  Created by 木藤 紘介 on 2015/06/23.
-//  Copyright (c) 2015年 木藤 紘介. All rights reserved.
+//  Created by Kosuke Kito on 2015/06/23.
+//  Copyright (c) 2015年 Kosuke Kito. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController, UIViewControllerTransitioningDelegate {
-    var animator: CircularRevealAnimator?
-    var tapPoint: CGPoint?
+class SecondViewController: UIViewController {
+    private var transitioner: Transitioner?
+    
+    class func instantiate(point: CGPoint) -> SecondViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("Second") as! SecondViewController
+        viewController.transitioner = Transitioner(style: .CircularReveal(point), viewController: viewController)
+        return viewController
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.transitioningDelegate = self
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {        
-        return animator
-    }
-    
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if let p = tapPoint {
-            return CircularRevealAnimator(center: p, duration: 0.5, spreading: false)
-        }
-        
-        return nil
-    }
-    
+}
+
+extension SecondViewController {
     @IBAction func buttonTapped(sender: UIButton) {
-        tapPoint = sender.center
+        transitioner = Transitioner(style: .CircularReveal(sender.center), viewController: self)
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
