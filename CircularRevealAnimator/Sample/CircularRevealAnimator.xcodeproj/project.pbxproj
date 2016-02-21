@@ -9,30 +9,17 @@
 /* Begin PBXBuildFile section */
 		8F8275031B3978130074C7A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8275021B3978130074C7A9 /* AppDelegate.swift */; };
 		8F8275051B3978130074C7A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8275041B3978130074C7A9 /* ViewController.swift */; };
-		8F82750A1B3978130074C7A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8275091B3978130074C7A9 /* Images.xcassets */; };
 		8F8275251B3978800074C7A9 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8275241B3978800074C7A9 /* CircularRevealAnimator.swift */; };
 		8F8275271B397A980074C7A9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8275261B397A980074C7A9 /* SecondViewController.swift */; };
 		B6D990E91C79B48200AC3390 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D990E81C79B48200AC3390 /* Transitioner.swift */; };
 		B6D990EC1C79BFE400AC3390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D990EA1C79BFE400AC3390 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8F8275131B3978130074C7A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F8274F51B3978130074C7A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F8274FC1B3978130074C7A9;
-			remoteInfo = CircularRevealAnimator;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		8F8274FD1B3978130074C7A9 /* CircularRevealAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularRevealAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F8275011B3978130074C7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F8275011B3978130074C7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8275021B3978130074C7A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F8275041B3978130074C7A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F8275091B3978130074C7A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8F8275121B3978130074C7A9 /* CircularRevealAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularRevealAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8275241B3978800074C7A9 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
 		8F8275261B397A980074C7A9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B6D990E81C79B48200AC3390 /* Transitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
@@ -41,13 +28,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		8F8274FA1B3978130074C7A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F82750F1B3978130074C7A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -70,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				8F8274FD1B3978130074C7A9 /* CircularRevealAnimator.app */,
-				8F8275121B3978130074C7A9 /* CircularRevealAnimatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,15 +64,6 @@
 			path = ../CircularRevealAnimator;
 			sourceTree = "<group>";
 		};
-		8F8275001B3978130074C7A9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8F8275011B3978130074C7A9 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			path = CircularRevealAnimator;
-			sourceTree = "<group>";
-		};
 		8F8275221B3978210074C7A9 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +71,7 @@
 				8F8275041B3978130074C7A9 /* ViewController.swift */,
 				8F8275261B397A980074C7A9 /* SecondViewController.swift */,
 				B6D990EA1C79BFE400AC3390 /* Main.storyboard */,
-				8F8275091B3978130074C7A9 /* Images.xcassets */,
-				8F8275001B3978130074C7A9 /* Supporting Files */,
+				8F8275011B3978130074C7A9 /* Info.plist */,
 			);
 			name = Sample;
 			sourceTree = "<group>";
@@ -127,24 +96,6 @@
 			productReference = 8F8274FD1B3978130074C7A9 /* CircularRevealAnimator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F8275111B3978130074C7A9 /* CircularRevealAnimatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F82751F1B3978130074C7A9 /* Build configuration list for PBXNativeTarget "CircularRevealAnimatorTests" */;
-			buildPhases = (
-				8F82750E1B3978130074C7A9 /* Sources */,
-				8F82750F1B3978130074C7A9 /* Frameworks */,
-				8F8275101B3978130074C7A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F8275141B3978130074C7A9 /* PBXTargetDependency */,
-			);
-			name = CircularRevealAnimatorTests;
-			productName = CircularRevealAnimatorTests;
-			productReference = 8F8275121B3978130074C7A9 /* CircularRevealAnimatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,10 +109,6 @@
 					8F8274FC1B3978130074C7A9 = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = YTB2PE5R75;
-					};
-					8F8275111B3978130074C7A9 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 8F8274FC1B3978130074C7A9;
 					};
 				};
 			};
@@ -179,7 +126,6 @@
 			projectRoot = "";
 			targets = (
 				8F8274FC1B3978130074C7A9 /* CircularRevealAnimator */,
-				8F8275111B3978130074C7A9 /* CircularRevealAnimatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,15 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F82750A1B3978130074C7A9 /* Images.xcassets in Resources */,
 				B6D990EC1C79BFE400AC3390 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F8275101B3978130074C7A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,22 +154,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F82750E1B3978130074C7A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8F8275141B3978130074C7A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8F8274FC1B3978130074C7A9 /* CircularRevealAnimator */;
-			targetProxy = 8F8275131B3978130074C7A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6D990EA1C79BFE400AC3390 /* Main.storyboard */ = {
@@ -355,40 +278,6 @@
 			};
 			name = Release;
 		};
-		8F8275201B3978130074C7A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CircularRevealAnimatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircularRevealAnimator.app/CircularRevealAnimator";
-			};
-			name = Debug;
-		};
-		8F8275211B3978130074C7A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CircularRevealAnimatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircularRevealAnimator.app/CircularRevealAnimator";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,15 +295,6 @@
 			buildConfigurations = (
 				8F82751D1B3978130074C7A9 /* Debug */,
 				8F82751E1B3978130074C7A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F82751F1B3978130074C7A9 /* Build configuration list for PBXNativeTarget "CircularRevealAnimatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F8275201B3978130074C7A9 /* Debug */,
-				8F8275211B3978130074C7A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
